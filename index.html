@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Leads Tracker</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Leads Tracker</h1>
+    </header>
+    <main>
+      <section class="input-section">
+        <input type="text" id="input-el" placeholder="Enter URL or Note" />
+        <div class="button-container">
+          <button id="input-btn">Save Input</button>
+          <button id="update-btn" style="display: none">Update Input</button>
+          <button id="tab-btn">Save Tab</button>
+          <button id="delete-btn">Delete All</button>
+        </div>
+      </section>
+      <div id="filter-container">
+        <section class="filter-section">
+          <select id="category">
+            <option value="">All</option>
+            <option value="Work">Work</option>
+            <option value="Personal">Personal</option>
+            <option value="Misc">Misc</option>
+          </select>
+        </section>
+      </div>
+      <section class="leads-section">
+        <ul id="ul-el"></ul>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

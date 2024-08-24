@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: #f0f4f8;
+  color: #333;
+}
+
+header {
+  background-color: #5f9341;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid #4a7f2b;
+}
+
+main {
+  padding: 20px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-section input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #5f9341;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.input-section button {
+  background: #5f9341;
+  color: #fff;
+  border: 2px solid #5f9341;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  font-weight: bold;
+}
+
+.input-section button:hover {
+  background: #4a7f2b;
+  border-color: #4a7f2b;
+}
+
+#delete-btn {
+  background: #ff6f61; /* Red background */
+  color: #fff;
+  border-color: #ff6f61; /* Red border */
+}
+
+#delete-btn:hover {
+  background: #ff3d2e; /* Darker red on hover */
+  border-color: #ff3d2e; /* Darker red border on hover */
+}
+
+.filter-section {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-section select {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 16px;
+}
+
+#filter-container {
+  width: 100%;
+  display: flex;
+}
+
+#category {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Allow buttons to wrap if needed */
+}
+
+@media (min-width: 600px) {
+  .button-container {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 599px) {
+  .button-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  button {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px 0;
+  }
+}
+
+/* Position filter based on language */
+html[lang="ar"] #filter-container {
+  justify-content: flex-end; /* Position to the right for Arabic */
+}
+
+html[lang="en"] #filter-container {
+  justify-content: flex-start; /* Position to the left for English */
+}
+
+.leads-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+li {
+  background: #ffffff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 599px) {
+  li {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+a {
+  color: #5f9341;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background: #ff6f61; /* Default button background */
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background: #ff3d2e; /* Darker red on hover */
+}
+
+.filter-section {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#filter-container {
+  width: 100%;
+  display: flex;
+}
+
+#category {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Allow buttons to wrap if needed */
+}
+
+@media (min-width: 600px) {
+  .button-container {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 599px) {
+  .button-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  button {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px 0;
+  }
+}
+
+/* Position filter based on language */
+html[lang="ar"] #filter-container {
+  justify-content: flex-end; /* Position to the right for English */
+}
+
+html[lang="en"] #filter-container {
+  justify-content: flex-start; /* Position to the left for Arabic */
+}

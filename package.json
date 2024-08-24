@@ -1,0 +1,14 @@
+{
+  "name": "leads-tracker",
+  "description": "A leads tracker chrome extension",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}
