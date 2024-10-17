@@ -48,14 +48,14 @@ function render(leads) {
     ulEl.innerHTML = listItems
 }
 
-function editLead(index) {
+window.editLead = function(index) {
     inputEl.value = myLeads[index].url
     editIndex = index
     inputBtn.style.display = "none"
     updateBtn.style.display = "inline"
 }
 
-function removeLead(index) {
+window.removeLead = function(index) {
     myLeads.splice(index, 1)
     localStorage.setItem("myLeads", JSON.stringify(myLeads))
     render(myLeads)
