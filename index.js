@@ -16,15 +16,13 @@ if (leadsFromLocalStorage) {
 }
 
 tabBtn.addEventListener("click", function () {
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-        const url = tabs[0].url
-        if (url.trim() !== "") {
-            const timestamp = new Date().toLocaleString()
-            myLeads.push({ url, timestamp, category: '' })
-            localStorage.setItem("myLeads", JSON.stringify(myLeads))
-            render(myLeads)
-        }
-    })
+    const url = window.location.href // This gets the current URL of the page where the app is running
+    if (url.trim() !== "") {
+        const timestamp = new Date().toLocaleString()
+        myLeads.push({ url, timestamp, category: '' })
+        localStorage.setItem("myLeads", JSON.stringify(myLeads))
+        render(myLeads)
+    }
 })
 
 function render(leads) {
