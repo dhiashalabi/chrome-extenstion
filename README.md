@@ -54,7 +54,7 @@ The application is designed to be responsive, ensuring usability across various 
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the [GitHub repository](#).
+Contributions are welcome! If you have any issues or suggestions for improvements, please open an issue or submit a pull request on the [GitHub repository](#).
 
 ## License
 
@@ -62,7 +62,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For questions or support, contact us at [dhiashalabi@gmail.com](mailto:dhiashalabi@gmail.com).
+For questions or support, contact us at [me@dhiashalabi.com](mailto:me@dhiashalabi.com).
 
 ---
 
