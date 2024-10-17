@@ -54,7 +54,7 @@ The application is designed to be responsive, ensuring usability across various 
 
 ## Contributing
 
-Contributions are welcome! If you have any issues or suggestions for improvements, please open an issue or submit a pull request on the [GitHub repository](#).
+Contributions are welcome! If you have any issues or suggestions for improvements, please open an issue or submit a pull request on the [GitHub repository](https://github.com/dhiashalabi/leads-tracker).
 
 ## License
 
